@@ -1,10 +1,10 @@
 $(function(){
     var shopId = getQueryString('shopId');
     var isEdit = shopId ? true: false;
-    var initUrl = '/shopadmin/getshopinitinfo';
-    var registerShopUrl = '/shopadmin/registershop';
-    var shopInfoUrl = "/shopadmin/getshopbyid?shopId=" + shopId;
-    var editShopUrl = '/shopadmin/modifyshop';
+    var initUrl = '/o2omall/shopadmin/getshopinitinfo';
+    var registerShopUrl = '/o2omall/shopadmin/registershop';
+    var shopInfoUrl = "/o2omall/shopadmin/getshopbyid?shopId=" + shopId;
+    var editShopUrl = '/o2omall/shopadmin/modifyshop';
     if(!isEdit){
         getShopInitInfo();
     } else {

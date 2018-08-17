@@ -9,8 +9,8 @@
 <html>
 <head>
     <title>Title</title>
+    <meta http-equiv="refresh" content="0;url=<%=request.getContextPath()%>/shopadmin/shoplist">
 </head>
 <body>
-    <h2>Hello World</h2>
 </body>
 </html>

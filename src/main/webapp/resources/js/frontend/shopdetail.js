@@ -5,15 +5,15 @@ $(function() {
 	// 默认一页返回的商品数
 	var pageSize = 3;
 	// 列出商品列表的URL
-	var listUrl = '/frontend/listproductsbyshop';
+	var listUrl = '/o2omall/frontend/listproductsbyshop';
 	// 默认的页码
 	var pageNum = 1;
 	// 从地址栏里获取ShopId
-	var shopId = getQueryString('shopId');
+    var shopId = getQueryString('shopId');
 	var productCategoryId = '';
 	var productName = '';
 	// 获取本店铺信息以及商品类别信息列表的URL
-	var searchDivUrl = '/frontend/listshopdetailpageinfo?shopId=' + shopId;
+	var searchDivUrl = '/o2omall/frontend/listshopdetailpageinfo?shopId=' + shopId;
 	// 渲染出店铺基本信息以及商品类别列表以供搜索
 	getSearchDivData();
 	// 预先加载10条商品信息
@@ -167,7 +167,7 @@ $(function() {
 			'.card',
 			function(e) {
 				var productId = e.currentTarget.dataset.productId;
-				window.location.href = '/frontend/productdetail?productId='
+				window.location.href = '/o2omall/frontend/productdetail?productId='
 						+ productId;
 			});
 	// 需要查询的商品名字发生变化后，重置页码，清空原先的商品列表，按照新的名字去查询

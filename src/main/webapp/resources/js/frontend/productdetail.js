@@ -2,7 +2,7 @@ $(function() {
 	// 从地址栏的URL里获取productId
 	var productId = getQueryString('productId');
 	// 获取商品信息的URL
-	var productUrl = '/frontend/listproductdetailpageinfo?productId='
+	var productUrl = '/o2omall/frontend/listproductdetailpageinfo?productId='
 			+ productId;
     Date.prototype.Format = function (fmt) { //author: meizz
         var o = {

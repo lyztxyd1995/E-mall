@@ -1,6 +1,6 @@
 $(function() {
 	//定义访问后台，获取头条列表以及一级类别列表的URL
-	var url = '/frontend/listmainpageinfo';
+	var url = '/o2omall/frontend/listmainpageinfo';
 	//访问后台，获取头条列表以及一级类别列表
 	$.getJSON(url, function(data) {
 		if (data.success) {
@@ -49,7 +49,7 @@ $(function() {
 
 	$('.row').on('click', '.shop-classify', function(e) {
 		var shopCategoryId = e.currentTarget.dataset.category;
-		var newUrl = '/frontend/shoplist?parentId=' + shopCategoryId;
+		var newUrl = '/o2omall/frontend/shoplist?parentId=' + shopCategoryId;
 		window.location.href = newUrl;
 	});
 
